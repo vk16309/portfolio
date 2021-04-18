@@ -71,6 +71,8 @@
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     height: 100vh;
 }
+
+
 .link-container{
     text-align: center;
     margin-left:10%;
@@ -128,6 +130,21 @@
     color: gray;
     z-index: 1000;
 }
+.btn-regular{
+        padding-left: 5%;
+        padding-right: 5%;
+        font-weight: 400;
+        border-width: 2px;
+        border-color: #061b3d;
+        background-color: white;
+        color:black;
+        border-radius: 290486px;
+}
+
+.btn-regular:hover{
+        background-color: #061b3d;
+        color: white;
+}
 
 .btn-style {
     font-size: 1.25rem;
@@ -154,9 +171,20 @@
     padding-top: 60px;
 }
 
+.progress-bar{
+    background-color: #7510F7;
+}
+.progress:hover .progress-bar{
+    background-color: #061b3d;
+}
+
 .progress {
     height: 1.5rem;
     font-size: 1rem;
+}
+.progress:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease;
 }
 
 .testbg { 
@@ -274,11 +302,17 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #f8f9fa;
+  background-color: #061b3d;
+  color: #FFF;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+.card{
+    border-radius: 12px;
 }
 
 .text {
-  color: black;
+  color: #fff;
   font-size: 20px;
   position: absolute;
   top: 30%;
@@ -290,26 +324,30 @@
 }
 
 .project-button {
-    border: none;
-    background-color: white;
-    color: black;
+    // border: none;
+     background-color: #061b3d;
+     color: #fff;
+     border-color: #7510F7;
     // border: 1px #122444 solid;
-    font-size: 20px;
+    // font-size: 20px;
     position: absolute;
     top: 70%;
     left: 50%;
     -webkit-transform: translate(-50%, -70%);
     -ms-transform: translate(-50%, -70%);
     transform: translate(-50%, -70%);
-    text-align: center;
+    // text-align: center;
 } 
 .project-button:hover {
+    background-color: #7510F7;
+    border-color: #7510F7;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .aguabg:hover .overlay, .testbg:hover .overlay, .todobg:hover .overlay  {
-    opacity: 0.8;
-    transform: scale(1.2);
+    opacity: 1;
+    // transform: scale(1);
+    transition: 0.25s ease-in-out;
 }
 
 
@@ -364,5 +402,116 @@
     .modal-card {
         width: 100%;
         height: 100%;
+    }
+}
+
+.iconanim{
+    animation: changingColor 10s ;
+}
+.iconanim:hover {
+    animation: rotateone 0.5s linear;
+}
+
+#intro:after {
+    
+    content: "";
+    animation: abomination1 7.5s linear 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes rotateone {
+    0%   {transform : rotate(72deg);}
+    25%  {transform : rotate(144deg); }
+    50%  {transform : rotate(216deg); }
+    75%  {transform : rotate(288deg);}
+    100% {transform : rotate(360deg); }
+  }
+
+@keyframes changingColor {
+    0%   {transform : scale(1);}
+    25%  {transform : scale(1.5); }
+    50%  {transform : scale(1); }
+    75%  {transform : scale(1.5);}
+    100% {transform : scale(1); }
+  }
+
+@keyframes abomination1 {
+    0% {
+      content: "H";
+    }
+    4% {
+      content: "He";
+    }
+    8% {
+      content: "Hel";
+    }
+    12% {
+      content: "Hell";
+    }
+    16% {
+      content: "Hello,";
+    }
+    20% {
+      content: "Hello, I";
+    }
+    24% {
+      content: "Hello, I'";
+    }
+    28% {
+      content: "Hello, I'm";
+    }
+    32% {
+      content: "Hello, I'm A";
+    }
+    36% {
+      content: "Hello, I'm AP";
+    }
+    40% {
+      content: "Hello, I'm API";
+    }
+    44% {
+      content: "Hello, I'm API ";
+    }
+    48% {
+      content: "Hello, I'm AP";
+    }
+    52% {
+      content: "Hello, I'm A";
+    }
+    56% {
+      content: "Hello, I'm ";
+    }
+    60% {
+      content: "Hello, I'm V";
+    }
+    64% {
+      content: "Hello, I'm Vi";
+    }
+    68% {
+      content: "Hello, I'm Viv";
+    }
+    72% {
+      content: "Hello, I'm Vive";
+    }
+    76% {
+      content: "Hello, I'm Vivek ";
+    }
+    80% {
+      content: "Hello, I'm Vivek K";
+    }
+    84% {
+      content: "Hello, I'm Vivek Ku";
+    }
+    88% {
+      content: "Hello, I'm Vivek Kum";
+    }
+    92% {
+      content: "Hello, I'm Vivek Kum";
+    }
+    96% {
+      content: "Hello, I'm Vivek Kuma";
+    }
+    100% {
+      content: "Hello, I'm Vivek Kumar.";
     }
 }

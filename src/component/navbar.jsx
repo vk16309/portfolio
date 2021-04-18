@@ -92,7 +92,6 @@ class Navbar extends React.Component {
 							aria-label="Toggle navigation"
 							aria-haspopup="true">
 							<span className="navbar-toggler-icon"> </span>
-							<span class="glyphicon glyphicon-remove"></span>
 						</button>
 						<div
 							className="collapse navbar-collapse"

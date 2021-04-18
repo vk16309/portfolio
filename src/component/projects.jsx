@@ -30,13 +30,13 @@ export default class Projects extends React.Component {
 								}>
 								<div className="overlay">
 									<div className="text">
-										<h2>silverLining</h2>
+										<h2>Silverlining</h2>
 									</div>
 									<div>
 									
 										<button
 											id="vmarine-button"
-											className="project-button"
+											className="btn btn-regular project-button btn-primary btn-lg"
 											onClick={() => {
 												var modalBG = document.getElementById(
 													"gallery-card"
@@ -48,7 +48,7 @@ export default class Projects extends React.Component {
 												marineModal.style.display =
 													"block";
 											}}>
-											<img className="project-image" src={plusIcon} alt=""/>
+											Visit Website
 										</button>
 									</div>
 								</div>
@@ -60,12 +60,12 @@ export default class Projects extends React.Component {
 								}>
 								<div className="overlay">
 									<div className="text">
-										<h2>gPortal</h2>
+										<h2>Grievance Portal</h2>
 									</div>
 									<div>
 										<button
 											id="agua-button"
-											className="project-button"
+											className="btn btn-regular project-button btn-primary btn-lg"
 											onClick={() => {
 												var modalBG = document.getElementById(
 													"gallery-card"
@@ -77,7 +77,7 @@ export default class Projects extends React.Component {
 												aguaModal.style.display =
 													"block";
 											}}>
-											<img src={plusIcon} alt=""/>
+											Visit Website
 										</button>
 									</div>
 								</div>
@@ -94,7 +94,7 @@ export default class Projects extends React.Component {
 									<div>
 										<button
 											id="todo-button"
-											className="project-button"
+											className="btn btn-regular project-button btn-primary btn-lg"
 											onClick={() => {
 												var modalBG = document.getElementById(
 													"gallery-card"
@@ -106,7 +106,7 @@ export default class Projects extends React.Component {
 												todoModal.style.display =
 													"block";
 											}}>
-											<img src={plusIcon} alt=""/>
+											Visit Website
 										</button>
 									</div>
 								</div>
@@ -122,7 +122,7 @@ export default class Projects extends React.Component {
 							<img src={silverLining} alt=""/>
 						</div>
 						<div className="modal-info">
-							<h2>silverLining</h2>
+							<h2>Silverlining</h2>
 							<div className="modal-description">
 								<ul>
 									<li>
@@ -137,6 +137,7 @@ developed the back-end functionalities of the website using Django REST framewor
 							</div>
 							<div className="modal-bottom">
 							<a
+									className = "btn btn-regular btn-primary btn-lg"
 									href="https://www.silverlining-global.com/"
 									target="_blank">
 									<h3>View live demo</h3>
@@ -189,6 +190,7 @@ developed the back-end functionalities of the website using Django REST framewor
 							</div>
 							<div className="modal-bottom">
 								<a
+									className = "btn btn-regular btn-primary btn-lg"
 									href="https://gportal.netlify.app/"
 									target="_blank">
 									<h3>View live demo</h3>
@@ -234,7 +236,7 @@ developed the back-end functionalities of the website using Django REST framewor
 								</ul>
 							</div>
 							<div className="modal-bottom">
-								<a href="https://github.com/vk16309/kyapata" target="_blank">
+								<a className = "btn btn-regular btn-primary btn-lg" href="https://github.com/vk16309/kyapata" target="_blank">
 									<h3>github link</h3>
 								</a>
 								<p

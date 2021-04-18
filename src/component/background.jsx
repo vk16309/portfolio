@@ -20,20 +20,20 @@ export default class Background extends React.Component {
 				<a
 				href="https://www.linkedin.com/in/devvivek/"
 				target="_blank"
-				rel="noopener noreferrer"><img className="img-fluid" src={linkdin} alt=""/>
+				rel="noopener noreferrer"><img className="img-fluid iconanim" src={linkdin} alt=""/>
 				</a>
 				<a
 				href="https://github.com/vk16309"
 				target="_blank"
-				rel="noopener noreferrer"><img className="img-fluid" src={github} alt=""/>
+				rel="noopener noreferrer"><img className="img-fluid iconanim" src={github} alt=""/>
 				</a>
 						
 					</div>
 				<div className="top-container flex">
-					<h1>
-						Hello, I&apos;m Vivek Kumar.
-						<br />
-						I&apos;m a Back End Developer.
+					<h1 id = "intro">
+						{/* Hello, I&apos;m Vivek Kumar. */}
+						{/* <br /> */}
+						{/* I&apos;m a Back End Developer. */}
 					</h1>
 					{/* offset can be cahnged in node modules wowjs default file */}
 					<button
