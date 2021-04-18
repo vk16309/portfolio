@@ -1,5 +1,6 @@
 import React from "react";
 import Background from "./background.jsx";
+// import "../../node_modules/bootstrap/dist/js/bootstrap.js";
 import About from "./about.jsx";
 //import Test from "./test.jsx";
 import Projects from "./projects.jsx";
@@ -44,6 +45,15 @@ class Navbar extends React.Component {
 			behavior: "smooth"
 		});
 	}
+	myFunction() {
+		var x = document.getElementById("navbarNavAltMarkup");
+		console.log(x.style.display)
+		if (x.style.display === "none") {
+		  x.style.display = "block";
+		} else {
+		  x.style.display = "none";
+		}
+	  }
 
 	render() {
 		return (
@@ -54,6 +64,7 @@ class Navbar extends React.Component {
 					aboutRef={this.about}
 					bounceIn={"wow bounceIn"}
 				/>
+				
 				<nav
 					id="navbar"
 					className="navbar navbar-expand-lg navbar-light bg-light">
@@ -70,13 +81,18 @@ class Navbar extends React.Component {
 						</a>
 						<button
 							className="navbar-toggler"
+							onClick={() => {
+								this.myFunction();
+							}}
 							type="button"
 							data-toggle="collapse"
 							data-target="#navbarNavAltMarkup"
 							aria-controls="navbarNavAltMarkup"
 							aria-expanded="false"
-							aria-label="Toggle navigation">
-							<span className="navbar-toggler-icon" />
+							aria-label="Toggle navigation"
+							aria-haspopup="true">
+							<span className="navbar-toggler-icon"> </span>
+							<span class="glyphicon glyphicon-remove"></span>
 						</button>
 						<div
 							className="collapse navbar-collapse"
