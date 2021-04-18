@@ -25,7 +25,7 @@ export default class Projects extends React.Component {
 
 							<div
 								className={
-									" card border-light shadow testbg col-12 col-sm-12 col-md-4 " +
+									" card border-light shadow testbg  " +
 									this.props.fadeIn
 								}>
 								<div className="overlay">
@@ -55,7 +55,7 @@ export default class Projects extends React.Component {
 							</div>
 							<div
 								className={
-									"card border-light shadow aguabg col-12 col-sm-12 col-md-4 " +
+									"card border-light shadow aguabg " +
 									this.props.fadeIn
 								}>
 								<div className="overlay">
@@ -84,7 +84,7 @@ export default class Projects extends React.Component {
 							</div>
 							<div
 								className={
-									"card border-light shadow todobg col-12 col-sm-12 col-md-4 " +
+									"card border-light shadow todobg  " +
 									this.props.fadeIn
 								}>
 								<div className="overlay">
