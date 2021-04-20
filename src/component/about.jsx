@@ -5,6 +5,7 @@ import pen from "../img/pen.png";
 import browser from "../img/browser.png";
 import myImage from "../img/myImage.png";
 import PropTypes from "prop-types";
+import resume from "../docs/resume.pdf"
 
 export default class About extends React.Component {
 	render() {
@@ -58,10 +59,25 @@ export default class About extends React.Component {
 								width: 250 + "px"
 							}}
 						/>
-						<p className={"mytext pt-3 " + this.props.fadeIn}>
-							I love to transform ideas into reality using code. I
+						<p className = "h4 pt-3">
+							Hi I'm Vivek . I love to transform ideas into reality using code. I
 							am passionate about building APIs using sails and Django Rest Framework.
 						</p>
+						<p className={"mytext  " + this.props.fadeIn}>
+							
+							You can call me a backend API developer. I am persuing my computer science Engineering from 
+							National Institute Of Technology Patna.
+							I don’t like to define myself by the work I’ve done.
+							 I define myself by the work I want to do. 
+							 Skills can be taught, personality is inherent.
+							  I prefer to keep learning, continue challenging myself,
+							   and do interesting things that matter.
+						</p>
+						<p className={"mytext " + this.props.fadeIn}>
+							You can read more about my 
+							experience, skills, education and much more in the PDF attached bellow:
+						</p>
+						<a class= "resumeLink" href={resume} download>My resume (pdf 75kb)</a>
 					</div>
 					<div
 						className={

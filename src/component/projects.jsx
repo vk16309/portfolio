@@ -14,12 +14,16 @@ export default class Projects extends React.Component {
 		return (
 			<React.Fragment>
 				<div id="my-projects" className="container-fluid bg-light mt-5">
-					<div className=" project-container container bg-light pb-5">
+					<div className=" project-container container pb-5">
 						<h1
 							id="projects"
 							className={"text-center " + this.props.fadeInRight}>
 							Projects
 						</h1>
+						<p className = "text-center text-white">
+							I'm more of a backend developer. I mostly design and build backend APIs.<br />
+							I have also developed frontend using jQuery in quite a few projects.
+						</p>
 						
 						<div className="card-deck row my-5">
 

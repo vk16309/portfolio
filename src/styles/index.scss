@@ -302,7 +302,7 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #061b3d;
+  background-color: #fff;
   color: #FFF;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border-radius: 12px;
@@ -312,7 +312,7 @@
 }
 
 .text {
-  color: #fff;
+  color: black;
   font-size: 20px;
   position: absolute;
   top: 30%;
@@ -396,6 +396,24 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+#my-projects {
+  /* background-image: linear-gradient(45deg, black, transparent); */
+  background-image: -webkit-linear-gradient(bottom, #fff 50%, #061b3d 50%);
+}
+#projects {
+  color: white;
+}
+.resumeLink{
+  color: #8b0000;
+  font-weight: bold;
+  transition: transform .1s ease-out;
+}
+.resumeLink:hover{
+  transform: translateX(35px);
+  text-decoration: none;
+  display: inline-block;
+    
 }
 
 @media only screen and (max-width: 900px) {
