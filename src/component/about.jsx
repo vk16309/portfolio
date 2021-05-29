@@ -77,7 +77,7 @@ export default class About extends React.Component {
 							You can read more about my 
 							experience, skills, education and much more in the PDF attached bellow:
 						</p>
-						<a class= "resumeLink" href={resume} download>My resume (pdf 75kb)</a>
+						<a class= "resumeLink" href={resume} download>My resume (pdf 102kb)</a>
 					</div>
 					<div
 						className={
